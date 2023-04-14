@@ -1,12 +1,12 @@
 pipeline {
   agent any
   options {
-    durabilityHint 'PERFORMANCE_OPTIMIZED'
+    durabilityHint 'MAX_SURVIVABILITY'
   }
   stages {
     stage('echo') {
       steps {
-        sh 'echo PERFORMANCE_OPTIMIZED'
+        sh 'echo MAX_SURVIVABILITY'
       }
     }
   }
